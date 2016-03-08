@@ -1,4 +1,5 @@
 //Copyright (c) 2016 Dylan Sanusi-Goh & Ethan Payne
+//Written by Dylan Sanusi-Goh & Ethan Payne under The MIT License
 
 #include <ESP8266WiFi.h>
 #include <Wire.h>
