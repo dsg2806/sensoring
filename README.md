@@ -64,6 +64,11 @@ In the first terminal, the message “THIS IS A TEST!” should appear.
 
 This concludes the Mosquitto server setup for the Raspberry Pi.
 
+###TO-DO
+1. Computational Averaging
+2. Make it work
+3. SQL Lite
+
 
 ###Contributors
 
