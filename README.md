@@ -41,7 +41,7 @@ Type in the terminal commands in order in terminal:
 
 Now the MQTT server will be running on the raspberry pi!
 
-3. Now do:
+Now do:
 
 >$ sudo apt-get install mosquitto-clients python-mosquitto
 
