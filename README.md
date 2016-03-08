@@ -1,2 +1,2 @@
-# sensoring
-The JMSS Sensoring Project 2.0 2016 - MQTT Edition
+# JMSS Sensoring Project 2.0 - MQTT & NodeMCU Edition
+
