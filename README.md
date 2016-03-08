@@ -8,9 +8,14 @@ Motivation
 ==========
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
-Installation
+Usage
 ==========
-Provide code examples and explanations of how to get the project.
+Libraries used in Arduino Client:
+- ESP8266WiFi - https://github.com/ekstrand/ESP8266wifi
+- Wire - https://www.arduino.cc/en/Reference/Wire
+- PubSubClient - https://github.com/knolleary/pubsubclient
+- Adafruit HDC1000 Library - https://github.com/adafruit/Adafruit_HDC1000_Library
+- MCP3008 - https://github.com/nodesign/MCP3008
 
 Tests
 ==========
