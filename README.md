@@ -9,6 +9,7 @@ At the top of the file there should be a short introduction and/ or overview tha
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
 ###Technologies
+
 Client Hardware:
 - 1 x ESP8266 Based NodeMCU Development Board
 - 1 x MCP3008 Analog to Digital Converter
@@ -27,6 +28,9 @@ Libraries used in Arduino Client:
 - PubSubClient - https://github.com/knolleary/pubsubclient
 - Adafruit HDC1000 Library - https://github.com/adafruit/Adafruit_HDC1000_Library
 - MCP3008 - https://github.com/nodesign/MCP3008
+
+Software concepts used in Raspberry Pi Python Broker:
+- MQTT (MosQUiTTo)
 
 ###Tests
 
