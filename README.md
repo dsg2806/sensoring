@@ -1,15 +1,15 @@
-# JMSS Sensoring Project 2.0 - MQTT & NodeMCU Edition
+## JMSS Sensoring Project 2.0 - MQTT & NodeMCU Edition
 
-Synopsis
-==========
+###Synopsis
+
 At the top of the file there should be a short introduction and/ or overview that explains what the project is. 
 
-Motivation
-==========
+###Motivation
+
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
-Usage
-==========
+###Usage
+
 Libraries used in Arduino Client:
 - ESP8266WiFi - https://github.com/ekstrand/ESP8266wifi
 - Wire - https://www.arduino.cc/en/Reference/Wire
@@ -17,8 +17,8 @@ Libraries used in Arduino Client:
 - Adafruit HDC1000 Library - https://github.com/adafruit/Adafruit_HDC1000_Library
 - MCP3008 - https://github.com/nodesign/MCP3008
 
-Tests
-==========
+###Tests
+
 
 Raspberry Pi MQTT Server Setup Steps:
 
@@ -65,12 +65,12 @@ In the first terminal, the message “THIS IS A TEST!” should appear.
 This concludes the Mosquitto server setup for the Raspberry Pi.
 
 
-Contributors
-==========
+###Contributors
+
 Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
 
-License
-==========
+###License
+
 All projects are under The MIT License (MIT)
  
 Copyright (c) 2016 Dylan Sanusi-Goh & Ethan Payne
