@@ -8,7 +8,18 @@ At the top of the file there should be a short introduction and/ or overview tha
 
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
-###Usage
+###Technologies
+Client Hardware:
+- 1 x ESP8266 Based NodeMCU Development Board
+- 1 x MCP3008 Analog to Digital Converter
+- 1 x HDC1008 I2C Temperature and Humidity Sensor
+- 1 x Freetronics Light Sensor
+- 1 x Freetronics Microphone Sensor
+- 1 x Breadboard
+- Many Breadboard Wires
+
+Broker Hardware:
+- 1 x Raspberry Pi 2 Model B
 
 Libraries used in Arduino Client:
 - ESP8266WiFi - https://github.com/ekstrand/ESP8266wifi
