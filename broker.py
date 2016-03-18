@@ -22,9 +22,9 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     strng = (msg.payload).split(",")
     idint += 1
-    conn.execute("INSERT INTO 1B3 (ID,LIGHT,SOUND,TEMPERATURE,HUMIDITY) \
+    1B3.execute("INSERT INTO 1B3 (ID,LIGHT,SOUND,TEMPERATURE,HUMIDITY) \
         VALUES (idint, strng[0], strng[1], strng[2], strng[3] )");
-    conn.commit()
+    1B3.commit()
     print(msg.topic+" "+str(msg.payload))
     #ON CLOSE DO conn.close()
 
