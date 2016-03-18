@@ -1,10 +1,13 @@
 ## JMSS Sensoring Project 2.0 - MQTT & NodeMCU Edition
 
-###Synopsis
-
+###Synopsis *To be updated*
 At the top of the file there should be a short introduction and/ or overview that explains what the project is. 
+- Light
+- Temperature
+- Sound
+- Humidity
 
-###Motivation
+###Motivation *To be updated*
 
 A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
 
@@ -28,6 +31,7 @@ Libraries used in Arduino Client:
 - PubSubClient - https://github.com/knolleary/pubsubclient
 - Adafruit HDC1000 Library - https://github.com/adafruit/Adafruit_HDC1000_Library
 - MCP3008 - https://github.com/nodesign/MCP3008
+- SQLite
 
 Software concepts used in Raspberry Pi Python Broker:
 - MQTT (MosQUiTTo)
