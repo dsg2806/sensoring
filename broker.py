@@ -22,7 +22,6 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     strng = (msg.payload).split(",")
     idint += 1
-    #if first two letters is whatever, log whatever
     conn.execute("INSERT INTO 1B3 (ID,LIGHT,SOUND,TEMPERATURE,HUMIDITY) \
         VALUES (idint, strng[0], strng[1], strng[2], strng[3] )");
     conn.commit()
