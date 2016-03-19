@@ -10,6 +10,7 @@ import time
        SOUND            INT     NOT NULL,
        TEMPERATURE        INT,
        HUMIDITY         INT);''')
+1B3.close()
 strng = ""
 idint = 0
 
@@ -21,10 +22,12 @@ def on_connect(client, userdata, flags, rc):
     client.subscribe("/sensors")
 
 def on_message(client, userdata, msg):
+    1B3 = sqlite3.connect('1B3.db')
     strng = (msg.payload).split(",")
     1B3.execute("INSERT INTO 1B3 (ID,LIGHT,SOUND,TEMPERATURE,HUMIDITY) \
         VALUES (int(time.time()), strng[0], strng[1], strng[2], strng[3] )");
     1B3.commit()
+    1B3.close()
     print(msg.topic+" "+str(msg.payload))
 
 def on_disconnect(client, userdata, rc):
