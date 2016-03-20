@@ -1,15 +1,22 @@
 ## JMSS Sensoring Project 2.0 - MQTT & NodeMCU Edition
 
-###Synopsis *To be updated*
-At the top of the file there should be a short introduction and/ or overview that explains what the project is. 
-- Light
-- Temperature
-- Sound
-- Humidity
+###Synopsis
 
-###Motivation *To be updated*
+The Sensory Project of JMSS is a joint project with three Australian schools. Each school has there own version of the project in their own school and are individually developing their projects. 
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain why the project exists.
+The Sensory Project uses sensors, and other hardware (see below) to measure the humidity, light, temperature and sound in the school.
+Currently we have two sensory systems set up in the school - in Blackburn (west side of top floor) and Wood (east side of top floor).
+
+The data from these sensors are updated onto a real time graph which can be accessed through Monash.
+
+###Motivation
+
+There are a few main motives for this project:
+ - to contrast with the sensory data from the schools in Queensland and compare differences in our schooling environments,
+ - to compare locations around the school and climatic environments
+ - to record issues with the climatic system so we can improve the school's climate (e.g. better implementation of climate systems around the school based on location of students, time, and the like)
+ - to see how certain factors in the school affect the school environment (e.g. number of students, weather, time of day etc.)
+ - to develop the students' skills in computer science
 
 ###Technologies
 
@@ -31,7 +38,6 @@ Libraries used in Arduino Client:
 - PubSubClient - https://github.com/knolleary/pubsubclient
 - Adafruit HDC1000 Library - https://github.com/adafruit/Adafruit_HDC1000_Library
 - MCP3008 - https://github.com/nodesign/MCP3008
-- SQLite
 
 Software concepts used in Raspberry Pi Python Broker:
 - MQTT (MosQUiTTo)
