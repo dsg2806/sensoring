@@ -4,12 +4,8 @@ import time
 
 oneB3 = sqlite3.connect('1B3.db')
 
-oneB3.execute('''CREATE TABLE DATA
-       (TIME INT PRIMARY KEY     NOT NULL,
-       LIGHT           INT    NOT NULL,
-       SOUND            INT     NOT NULL,
-       TEMPERATURE        INT     NOT NULL,
-       HUMIDITY         INT     NOT NULL);''')
+oneB3.execute('''CREATE TABLE DATA (Time INTEGER PRIMARY KEY NOT NULL, Light INTEGER NOT NULL, Sound INTEGER NOT NULL, Temperature INTEGER NOT NULL, 
+Humidity INTEGER NOT NULL);''')
 oneB3.close()
 strng = ""
 idint = 0
@@ -31,10 +27,10 @@ def on_message(client, userdata, msg):
 
     #VALUES (int(time.time()), strng[0], strng[1], strng[2], strng[3] )");
     if !(dontRun): 
-    	oneB3.execute(
- 	"INSERT INTO DATA (ID,LIGHT,SOUND,TEMPERATURE,HUMIDITY) VALUES (?, ?, ?, ?, ?)"
-	(int(time.time()), int(strng[0]), int(strng[1]), int(strng[2]), int(strng[3]))
-	);
+	oneB3.execute(
+	"INSERT INTO DATA (Time,Light,Sound,Temperature,Humidity) VALUES (?, ?, ?, ?, ?)"
+	int(time.time()), int(strng[0]), int(strng[1]), int(strng[2]), int(strng[3]))
+
     oneB3.commit()
     oneB3.close()
     print(msg.topic+" "+str(msg.payload))
