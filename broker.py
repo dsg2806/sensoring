@@ -19,16 +19,15 @@ def on_connect(client, userdata, flags, rc):
 
 def on_message(client, userdata, msg):
     oneB3 = sqlite3.connect('1B3.db')
-    strng = (msg.payload).split(",")
+    strng = (msg.payload).split(" ")
     dontRun = False
     for i in strng:
     	if (i.isNumeric() == False):
     		dontRun = True 
 
     #VALUES (int(time.time()), strng[0], strng[1], strng[2], strng[3] )");
-    if !(dontRun): 
-	oneB3.execute(
-	"INSERT INTO DATA (Time,Light,Sound,Temperature,Humidity) VALUES (?, ?, ?, ?, ?)"
+    if (dontRun == True): 
+	oneB3.execute("INSERT INTO DATA (Time,Light,Sound,Temperature,Humidity) VALUES (?, ?, ?, ?, ?)"
 	int(time.time()), int(strng[0]), int(strng[1]), int(strng[2]), int(strng[3]))
 
     oneB3.commit()
