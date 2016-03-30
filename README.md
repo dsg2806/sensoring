@@ -51,39 +51,39 @@ Boot your Raspberry Pi and connect it to the either Eduroam or Guest Wireless.
 
 Type in the terminal commands in order in terminal:
 
->$ wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
-
->$ sudo apt-key add mosquitto-repo.gpg.key
-
->$ cd /etc/apt/sources.list.d/
-
->$ sudo wget http://repo.mosquitto.org/debian/mosquitto-wheezy.list
-
->$ sudo apt-get update
-
->$ sudo apt-get install mosquitto
-
+```bash
+wget http://repo.mosquitto.org/debian/mosquitto-repo.gpg.key
+sudo apt-key add mosquitto-repo.gpg.key
+cd /etc/apt/sources.list.d/
+sudo wget http://repo.mosquitto.org/debian/mosquitto-wheezy.list
+sudo apt-get update
+sudo apt-get install mosquitto
+```
 
 Now the MQTT server will be running on the raspberry pi!
 
 Now do:
 
->$ sudo apt-get install mosquitto-clients python-mosquitto
+```bash
+sudo apt-get install mosquitto-clients python-mosquitto
+```
 
 4. To test the mqtt server is running, open two terminal windows side by side.
 
 5. In terminal one:
 
->$ sudo service mosquitto status
-
->$ sudo mosquitto_sub -t /test
+```bash
+sudo service mosquitto status
+sudo mosquitto_sub -t /test
+```
 
 6. If this doesn’t say the server is running (in green text), we have a problem, tell someone loudly. 
 
 7. In terminal 2:
 
->$ sudo mosquitto_pub -t /test -m “THIS IS A TEST!”
-
+```bash
+sudo mosquitto_pub -t /test -m “THIS IS A TEST!”
+```
 
 In the first terminal, the message “THIS IS A TEST!” should appear.
 
