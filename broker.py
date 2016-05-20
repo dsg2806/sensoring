@@ -1,3 +1,5 @@
+#SQL Code must be fixed. Previous revisions of CSV work fine, but SQL might be cool for the future.
+
 import paho.mqtt.client as mqtt
 import sqlite3
 import time
