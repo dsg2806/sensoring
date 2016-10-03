@@ -23,7 +23,7 @@ There are a few main motives for this project:
 Client Hardware:
 - 1 x ESP8266 Based NodeMCU Development Board
 - 1 x MCP3008 Analog to Digital Converter
-- 1 x HDC1008 I2C Temperature and Humidity Sensor
+- 1 x HDC1008 I2C Temperature and Humidity Sensor (or other I2C Compatible)
 - 1 x Freetronics Light Sensor
 - 1 x Freetronics Microphone Sensor
 - 1 x Breadboard
