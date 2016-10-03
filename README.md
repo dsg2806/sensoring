@@ -92,7 +92,7 @@ This concludes the Mosquitto server setup for the Raspberry Pi.
 ###TO-DO
 1. Computational Averaging
 2. Make it work
-3. SQL Lite
+3. Server over WPA2Eduroam
 
 
 ###Contributors
