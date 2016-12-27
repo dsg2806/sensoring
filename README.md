@@ -1,5 +1,7 @@
 ## JMSS Sensoring Project 2.0 - MQTT & NodeMCU Edition
 
+**Code is currently not functioning after Monash network changes**
+
 ###Synopsis
 
 The Sensory Project of JMSS is a joint project with three Australian schools. Each school has there own version of the project in their own school and are individually developing their projects. 
